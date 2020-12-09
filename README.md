@@ -8,6 +8,6 @@
 
 
 ## 源代码运行
-···bash
+```bash
 parcel src/index.html
 ```
