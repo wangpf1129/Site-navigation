@@ -3,8 +3,8 @@ const $lastLi = $siteList.find('li.lastLi')
 let dataUrl = localStorage.getItem('dataUrl')
 dataUrl = JSON.parse(dataUrl)
 const hashMap = dataUrl || [{
-  url: 'https://github.com/',
-  name: 'GitHub'
+  url: 'https://juejin.cn/',
+  name: '掘金'
 },
   {
     url: 'https://nodejs.org/en/',
