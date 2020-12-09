@@ -36,8 +36,8 @@ body {
     background: url("./img/bg.jpg");
     font-family: "Microsoft Yahei Light", "Microsoft Yahei", PingFangSC-Regular, Helvetica, sans-serif, 等线;
     background-color: rgb(51, 51, 51);
-    background-size: cover;
-    -webkit-tap-highlight-color: transparent;
+    /*background-size: cover;*/
+    /*-webkit-tap-highlight-color: transparent;*/
     overflow: hidden;
     margin: 0px;
     background-repeat: no-repeat;
