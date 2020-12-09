@@ -34,9 +34,11 @@ const simplify = (url) => {
     .replace('www.', '')
     .replace(/\/.*/, '') // 删除 / 后边的内容
 }
-const findIcon = (url) => {
-  return "https://www.google.com/s2/favicons?domain=" + url + "";
-};
+
+
+// const findIcon = (url) => {
+//   return "https://www.google.com/s2/favicons?domain=" + url + "";
+// };
 
 
 const render = () => {
@@ -46,7 +48,9 @@ const render = () => {
     <li>
      <div class="site">
        <div class="logo">
-          <img src=" ${findIcon(item.url)}" alt=""> 
+          <svg class="icon">
+              <use xlink:href="#icon-${item.url[8]}"></use>
+           </svg>
        </div>
        <div class="close">
            <svg class="icon">

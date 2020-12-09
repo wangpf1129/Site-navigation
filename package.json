@@ -1,5 +1,25 @@
 {
   "devDependencies": {
     "cssnano": "^4.1.10"
-  }
+  },
+  "name": "Website-nav",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwwpppfffzzz/Site-navigation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wwwpppfffzzz/Site-navigation/issues"
+  },
+  "homepage": "https://github.com/wwwpppfffzzz/Site-navigation#readme",
+  "description": ""
 }

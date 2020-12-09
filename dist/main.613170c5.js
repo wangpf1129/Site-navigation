@@ -123,8 +123,8 @@ var $lastLi = $siteList.find('li.lastLi');
 var dataUrl = localStorage.getItem('dataUrl');
 dataUrl = JSON.parse(dataUrl);
 var hashMap = dataUrl || [{
-  url: 'https://github.com/',
-  name: 'GitHub'
+  url: 'https://juejin.cn/',
+  name: '掘金'
 }, {
   url: 'https://nodejs.org/en/',
   name: 'Node'
@@ -144,16 +144,15 @@ var hashMap = dataUrl || [{
 
 var simplify = function simplify(url) {
   return url.replace('http://', '').replace('https://', '').replace('www.', '').replace(/\/.*/, ''); // 删除 / 后边的内容
-};
+}; // const findIcon = (url) => {
+//   return "https://www.google.com/s2/favicons?domain=" + url + "";
+// };
 
-var findIcon = function findIcon(url) {
-  return "https://www.google.com/s2/favicons?domain=" + url + "";
-};
 
 var render = function render() {
   $siteList.find('li:not(.lastLi)').remove();
   hashMap.forEach(function (item, index) {
-    var $li = $("\n    <li>\n     <div class=\"site\">\n       <div class=\"logo\">\n          <img src=\" ".concat(findIcon(item.url), "\" alt=\"\"> \n       </div>\n       <div class=\"close\">\n           <svg class=\"icon\">\n               <use xlink:href=\"#icon-close\"></use>\n            </svg>\n        </div>\n       <span class=\"siteName\">").concat(item.name, "</span></span>\n     </div> \n   </li>\n    ")).insertBefore($lastLi); // console.log(simplify(item.url)[0])
+    var $li = $("\n    <li>\n     <div class=\"site\">\n       <div class=\"logo\">\n          <svg class=\"icon\">\n              <use xlink:href=\"#icon-".concat(item.url[8], "\"></use>\n           </svg>\n       </div>\n       <div class=\"close\">\n           <svg class=\"icon\">\n               <use xlink:href=\"#icon-close\"></use>\n            </svg>\n        </div>\n       <span class=\"siteName\">").concat(item.name, "</span></span>\n     </div> \n   </li>\n    ")).insertBefore($lastLi); // console.log(simplify(item.url)[0])
 
     var $close = $li.find('.close'); // 定义PC端定时器
 
@@ -237,4 +236,4 @@ window.onbeforeunload = function () {
   localStorage.setItem('dataUrl', string);
 };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.8262c946.js.map
+//# sourceMappingURL=main.613170c5.js.map
