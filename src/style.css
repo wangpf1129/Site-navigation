@@ -1,0 +1,188 @@
+/* 重定义样式 */
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/*  样式 */
+
+body {
+    max-width: 100%;
+    background: url("./img/bg.jpg");
+    font-family: "Microsoft Yahei Light", "Microsoft Yahei", PingFangSC-Regular, Helvetica, sans-serif, 等线;
+    background-color: rgb(51, 51, 51);
+    background-size: cover;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-size: auto;
+    }
+}
+
+header {
+    margin: 81px 55px 60px 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    font-size: 18px;
+    position: relative;
+}
+
+.search .search-logo {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+.search .search-icon {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: inherit;
+    font-size: 22px;
+    /* display: none; */
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search > input {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 266px;
+    line-height: 34px;
+    padding: 0 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+@media (min-width: 500px) {
+    .search > input {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        margin-top: 166px;
+    }
+
+}
+
+main {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.siteList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 55px;
+}
+
+.siteList li {
+    margin-right: 22px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.siteList .site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.siteList .site > .logo {
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteList .site > .siteName {
+    padding-top: 6px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 550;
+    line-height: 22px;
+}
+
+.siteList .site .close {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    font-size: 16px;
+    padding: 1px;
+    cursor: default;
+    display: none;
+}
+
+.siteList .addButton {
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, .3);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}
