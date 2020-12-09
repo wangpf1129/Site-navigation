@@ -94,7 +94,7 @@ header {
 
 @media (min-width: 500px) {
     .search > input {
-        min-width: 400px;
+        min-width: 500px;
     }
 }
 
@@ -187,4 +187,4 @@ footer {
     text-shadow: 0 0 20px rgba(0, 0, 0, .8);
 }
 
-/*# sourceMappingURL=style.dcb9d28b.css.map */
+/*# sourceMappingURL=style.1039fd93.css.map */

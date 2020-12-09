@@ -94,7 +94,7 @@ header {
 
 @media (min-width: 500px) {
     .search > input {
-        min-width: 400px;
+        min-width: 500px;
     }
 }
 
